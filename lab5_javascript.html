@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Membuat form</title>
+    <!--script membuat form-->
+    <script lang="javascript">
+        function test (){
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+            document.kirim.T2.value="Bilangan Genap"
+            else
+            document.kirim.T2.value="Bilangan Ganjil"
+        }
+    </script>
+    <!--script formbutton-->
+   <script lang="javascript">
+   function ubahWarnaLB(warna){
+   document.bgColor=warna;
+   }
+   function ubahWarnaLD(warna){
+       document.fgColor=warna;
+   }</script>
+   
+<!--Script checkbox-->
+<script>
+    function hitung(ele){
+        var total=document.getElementById('total').value;
+            total=(total ? parseInt (total) : 0);
+            var harga=0;
+
+            if (ele.checked){
+                harga=ele.value;
+                total += parseInt (harga);
+            } else{
+                harga= ele.value;
+                if (total > 0)
+                    total -= parseInt(harga);
+            }
+            document.getElementById('total').value=total;
+    }
+</script>
+<!--Script VALIDASI-->
+
+<script lang="javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var alamat = document.getElementById("alamat").value;
+		if (nama != "" && email!="" && alamat !="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</head>
+<body>
+
+    <div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Daftar" class="tombol">
+			</div>
+		</form>
+	</div>
+    
+    <script lang="javascript">
+        document.write("Dimodofikasi terakhir pada "+ document.lastModified);
+    </script>
+    
+<hr>
+    <form method="POST" name="kirim">
+        <P>BIL<input type="text" name="T1" size="20">
+        MERUPAKAN BIL <input type="text" name="T2" size="20"></P>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
+    <h1>TEST</h1>
+    <form>
+        <input type="button" value="Latar belakang Hijau" onclick="ubahWarnaLB('GREEN')">
+        <input type="button" value="Latar belakang putih" onclick="ubahWarnaLB('WHITE')">
+        <input type="button" value="text kuning" onclick="ubahWarnaLD('YELLOW')">
+        <input type="button" value="text biru" onclick="ubahWarnaLD('BLUE')">
+    </form>
+    <h2>DAFTAR MENU MAKAN</h2>
+    <label><input type="checkbox" value="5000" id="menu1" onclick="hitung(this);"/>Ayam Goreng Rp. 5.000</label><br/>
+    <label><input type="checkbox" value="500" id="menu2" onclick="hitung(this);"/>Tempe Goreng Rp. 5.00</label><br/>
+    <label><input type="checkbox" value="2500" id="menu3" onclick="hitung(this);"/>Telur dadar Rp. 2.500</label><hr/>
+    <strong>total Bayar : Rp. <input id="total" type="text"/></strong>
+</body>
+</html>
