@@ -13,7 +13,7 @@
 
 <hr>
 
-##2. <b> Alert Box <b>
+## 2. <b> Alert Box <b>
 # Coding :
 ![pro2](https://user-images.githubusercontent.com/81587959/116131419-93657e80-a6f6-11eb-833b-4bc9b90ab344.PNG)
 ![pro3](https://user-images.githubusercontent.com/81587959/116131917-269eb400-a6f7-11eb-826f-651319795622.PNG)
@@ -26,7 +26,7 @@
 
 <hr>
 
-##3. <b> Membuat Form <b>
+## 3. <b> Membuat Form <b>
 # Coding:
   ![pro5](https://user-images.githubusercontent.com/81587959/116132254-8eed9580-a6f7-11eb-9b0b-49a703628ff2.PNG)
 
@@ -36,7 +36,7 @@
 <hr>
 
 
-##4. <b> Membuat Button <b>
+## 4. <b> Membuat Button <b>
  # Coding :
 ![pro6](https://user-images.githubusercontent.com/81587959/116132573-e855c480-a6f7-11eb-8304-bb0199946564.PNG)
 ![pro66](https://user-images.githubusercontent.com/81587959/116132635-f6a3e080-a6f7-11eb-86d6-b77b2fc4231a.PNG)
@@ -47,7 +47,7 @@
  
 <hr>
 
-##5. <b> Mrembuat Checkbos :
+## 5. <b> Mrembuat Checkbos :
 # Coding :
 ![pro7](https://user-images.githubusercontent.com/81587959/116132982-61551c00-a6f8-11eb-9566-8607d7c3178b.PNG)
 
@@ -58,7 +58,7 @@
 
 <hr>
 
-##6. <b> Membuat Form Validasi <b>
+## 6. <b> Membuat Form Validasi <b>
 # Coding html:
   ![pro8](https://user-images.githubusercontent.com/81587959/116133177-9bbeb900-a6f8-11eb-88b3-03d3610734bb.PNG)
 
